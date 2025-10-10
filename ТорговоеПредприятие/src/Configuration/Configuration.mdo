@@ -39,5 +39,9 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
-  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Договоры</catalogs>
+  <catalogs>Catalog.Квартиры</catalogs>
+  <catalogs>Catalog.Клиенты</catalogs>
+  <documents>Document.СдачаВАренду</documents>
+  <enums>Enum.ВидыДоговоров</enums>
 </mdclass:Configuration>

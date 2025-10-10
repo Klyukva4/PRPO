@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f52dcb23-1333-4305-bbcb-85f144ac8150">
+  <producedTypes>
+    <objectType typeId="1fb7b01e-0540-4b11-841d-54a1c765e269" valueTypeId="2a642cec-a617-4d0d-ab88-a27250e32402"/>
+    <refType typeId="6696a674-d5ce-417b-98ec-a7df61141cba" valueTypeId="f873ea8a-538a-4c16-a748-5965c455a4ed"/>
+    <selectionType typeId="861b556c-ee0b-486d-bc84-2f860978e113" valueTypeId="5735efc2-b4bb-41ae-8035-9822b3400550"/>
+    <listType typeId="b68af7d4-e644-4851-9183-5fedc35e2b69" valueTypeId="f49dd28d-60fa-4d89-a8fd-74acc8076302"/>
+    <managerType typeId="f29b16fc-74c5-48a2-8f9f-118885ccff3b" valueTypeId="bee0dd22-1b6d-4695-9f82-5b56ad948bbd"/>
+  </producedTypes>
+  <name>СдачаВАренду</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сдача в аренду</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.СдачаВАренду.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Сдача в аренду</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="8aee8fd3-998c-4768-810f-fedae39fc095">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="aa6cf3db-7921-4ec7-9614-347235328701">
+    <name>Квартира</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квартира</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Квартиры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e13ac557-dd54-4ac0-a4ae-cf545ecb264e">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Договоры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Клиент</name>
+      <field>Document.СдачаВАренду.Attribute.Клиент</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.СдачаВАренду.Attribute.Квартира</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ВидДоговора</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидыДоговоров.EnumValue.СПокупателем</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f3159391-2409-4c65-a360-4e8f3c142bd5">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="65be2b3a-12e5-4b99-8771-1740a4bfa581">
+    <producedTypes>
+      <objectType typeId="cf3c703d-ce24-4c10-99b2-1492bafbb23c" valueTypeId="5ad7ab85-6cc1-4ce3-bceb-045356f2307e"/>
+      <rowType typeId="868cae66-434f-43cb-8fed-2ef1eb247643" valueTypeId="a67d71d7-e8b1-4d5c-91b0-23160ff51eb8"/>
+    </producedTypes>
+    <name>Таблица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <attributes uuid="40329afc-49f2-4e93-b9dd-40a4b4f1320c">
+      <name>Квартира</name>
+      <synonym>
+        <key>ru</key>
+        <value>Квартира</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Квартиры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="87b9dcf1-79ac-45b1-b82b-2907a6114d0c">
+      <name>ДатаНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fa8d0af2-340a-4be5-b583-dad8bffc0267">
+      <name>ДатаОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0db94d97-b0f1-4b28-93a9-698089ac95d0">
+      <name>Стоимость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стоимость</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="de7de496-feb0-4324-854a-0c8517ffdb80">
+      <name>КоличествоДней</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество дней</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>
