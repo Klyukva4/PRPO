@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f52dcb23-1333-4305-bbcb-85f144ac8150">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87629790-818d-48fd-a3b5-e516ad33ea94">
   <producedTypes>
-    <objectType typeId="1fb7b01e-0540-4b11-841d-54a1c765e269" valueTypeId="2a642cec-a617-4d0d-ab88-a27250e32402"/>
-    <refType typeId="6696a674-d5ce-417b-98ec-a7df61141cba" valueTypeId="f873ea8a-538a-4c16-a748-5965c455a4ed"/>
-    <selectionType typeId="861b556c-ee0b-486d-bc84-2f860978e113" valueTypeId="5735efc2-b4bb-41ae-8035-9822b3400550"/>
-    <listType typeId="b68af7d4-e644-4851-9183-5fedc35e2b69" valueTypeId="f49dd28d-60fa-4d89-a8fd-74acc8076302"/>
-    <managerType typeId="f29b16fc-74c5-48a2-8f9f-118885ccff3b" valueTypeId="bee0dd22-1b6d-4695-9f82-5b56ad948bbd"/>
+    <objectType typeId="65aa44fe-134d-428a-9f8c-153d384cf455" valueTypeId="3a24a012-f74c-47e2-84a7-b7af7c651cbc"/>
+    <refType typeId="564b1729-fe24-4075-a52e-2ca97bf7718f" valueTypeId="f249f1fe-9ade-4a3a-b87d-c8a07a5ff2a6"/>
+    <selectionType typeId="873cfde5-4774-4400-a915-ea6d7bff2b69" valueTypeId="a5ac01bb-3d13-44aa-80a0-1552ef95d66c"/>
+    <listType typeId="daef67d2-46cb-4106-ac02-ce2d272e9a9d" valueTypeId="30487143-ab8c-415c-9242-83c0f66092a1"/>
+    <managerType typeId="70981835-73ba-4bfb-9249-4112a4a55ac6" valueTypeId="3c46f2ea-42d8-4f5e-a813-9cd3a2bf066d"/>
   </producedTypes>
-  <name>СдачаВАренду</name>
+  <name>ПродлениеАренды</name>
   <synonym>
     <key>ru</key>
-    <value>Сдача в аренду</value>
+    <value>Продление аренды</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.СдачаВАренду.StandardAttribute.Number</inputByString>
+  <inputByString>Document.ПродлениеАренды.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -30,7 +30,7 @@
   <registerRecords>AccumulationRegister.Продажи</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <attributes uuid="8aee8fd3-998c-4768-810f-fedae39fc095">
+  <attributes uuid="a351ac11-4c5b-4146-a37b-321819353e2d">
     <name>Клиент</name>
     <synonym>
       <key>ru</key>
@@ -46,7 +46,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="aa6cf3db-7921-4ec7-9614-347235328701">
+  <attributes uuid="89f9837c-825d-4006-86bf-65b2e0afd5ba">
     <name>Квартира</name>
     <synonym>
       <key>ru</key>
@@ -62,7 +62,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="e13ac557-dd54-4ac0-a4ae-cf545ecb264e">
+  <attributes uuid="96726231-7324-42e4-937a-1d8918992b60">
     <name>Договор</name>
     <synonym>
       <key>ru</key>
@@ -76,11 +76,11 @@
     <fillChecking>ShowError</fillChecking>
     <choiceParameterLinks>
       <name>Отбор.Клиент</name>
-      <field>Document.СдачаВАренду.Attribute.Клиент</field>
+      <field>Document.ПродлениеАренды.Attribute.Клиент</field>
     </choiceParameterLinks>
     <choiceParameterLinks>
       <name>Отбор.Владелец</name>
-      <field>Document.СдачаВАренду.Attribute.Квартира</field>
+      <field>Document.ПродлениеАренды.Attribute.Квартира</field>
     </choiceParameterLinks>
     <choiceParameters>
       <name>Отбор.ВидДоговора</name>
@@ -92,7 +92,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="f3159391-2409-4c65-a360-4e8f3c142bd5">
+  <attributes uuid="b9f52a57-e3d1-475e-874e-4c60c37ab303">
     <name>Комментарий</name>
     <synonym>
       <key>ru</key>
@@ -109,10 +109,10 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <tabularSections uuid="65be2b3a-12e5-4b99-8771-1740a4bfa581">
+  <tabularSections uuid="180746b5-49ae-46e5-bbcb-13e73935400c">
     <producedTypes>
-      <objectType typeId="cf3c703d-ce24-4c10-99b2-1492bafbb23c" valueTypeId="5ad7ab85-6cc1-4ce3-bceb-045356f2307e"/>
-      <rowType typeId="868cae66-434f-43cb-8fed-2ef1eb247643" valueTypeId="a67d71d7-e8b1-4d5c-91b0-23160ff51eb8"/>
+      <objectType typeId="f4a0b191-abd0-4dcd-9c72-db672da08ef0" valueTypeId="11583129-61ef-4940-8b65-0bf0aab36930"/>
+      <rowType typeId="c6501d1e-2d0a-4fee-832c-ea667c097d6c" valueTypeId="56156de4-6463-41a5-b6b7-beb04875e3b6"/>
     </producedTypes>
     <name>Таблица</name>
     <synonym>
@@ -120,7 +120,7 @@
       <value>Таблица</value>
     </synonym>
     <fillChecking>ShowError</fillChecking>
-    <attributes uuid="40329afc-49f2-4e93-b9dd-40a4b4f1320c">
+    <attributes uuid="d2db7382-3f5b-4d12-8c4d-40d79785ba79">
       <name>Квартира</name>
       <synonym>
         <key>ru</key>
@@ -135,7 +135,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="87b9dcf1-79ac-45b1-b82b-2907a6114d0c">
+    <attributes uuid="c10dea3d-2b04-4717-a243-cbc61ee97122">
       <name>ДатаНачала</name>
       <synonym>
         <key>ru</key>
@@ -153,7 +153,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="fa8d0af2-340a-4be5-b583-dad8bffc0267">
+    <attributes uuid="b682506a-2cee-4485-aa4a-25e9f7c8f24d">
       <name>ДатаОкончания</name>
       <synonym>
         <key>ru</key>
@@ -171,7 +171,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="0db94d97-b0f1-4b28-93a9-698089ac95d0">
+    <attributes uuid="8a937290-e88b-4239-935d-e77270cddcef">
       <name>Стоимость</name>
       <synonym>
         <key>ru</key>

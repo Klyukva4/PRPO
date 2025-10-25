@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b0f6c9b-7128-4dcf-87df-c6d40a3c213b">
-  <name>ТорговоеПредприятие</name>
+  <name>АгенствоАрендыКвартиры</name>
   <synonym>
     <key>ru</key>
-    <value>Торговое предприятие</value>
+    <value>Агенство аренды квартиры</value>
   </synonym>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="9bc94e24-f995-497e-8caa-f96805731377"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="062b3105-e530-4f06-bc54-6835bd925b44"/>
@@ -42,6 +42,9 @@
   <catalogs>Catalog.Договоры</catalogs>
   <catalogs>Catalog.Квартиры</catalogs>
   <catalogs>Catalog.Клиенты</catalogs>
+  <documents>Document.ПродлениеАренды</documents>
   <documents>Document.СдачаВАренду</documents>
   <enums>Enum.ВидыДоговоров</enums>
+  <reports>Report.Продажи</reports>
+  <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
 </mdclass:Configuration>
